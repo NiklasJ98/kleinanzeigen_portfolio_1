@@ -9,8 +9,11 @@
  */
 package dhbwka.wwi.vertsys.javaee.renamepls.jpa;
 
-
-public enum TaskPriceType {
+/**
+ *
+ * @author nfi
+ */
+public enum Preistyp {
     FIXED,OPTION;
 
     /**

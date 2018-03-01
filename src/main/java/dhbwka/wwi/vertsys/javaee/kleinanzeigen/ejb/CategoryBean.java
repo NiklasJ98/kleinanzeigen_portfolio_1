@@ -7,9 +7,9 @@
  * Dieser Quellcode ist lizenziert unter einer
  * Creative Commons Namensnennung 4.0 International Lizenz.
  */
-package dhbwka.wwi.vertsys.javaee.renamepls.ejb;
+package dhbwka.wwi.vertsys.javaee.kleinanzeigen.ejb;
 
-import dhbwka.wwi.vertsys.javaee.renamepls.jpa.Category;
+import dhbwka.wwi.vertsys.javaee.kleinanzeigen.jpa.Category;
 import java.util.List;
 import javax.annotation.security.RolesAllowed;
 import javax.ejb.Stateless;
@@ -18,7 +18,7 @@ import javax.ejb.Stateless;
  * Einfache EJB mit den üblichen CRUD-Methoden für Kategorien.
  */
 @Stateless
-@RolesAllowed("renamepls-app-user")
+@RolesAllowed("kleinanzeigen-app-user")
 public class CategoryBean extends EntityBean<Category, Long> {
 
     public CategoryBean() {

@@ -23,18 +23,18 @@ Gehe hierfür wie folgt vor:
     3. Oberhalb der Tabelle auf „New” klicken
     4. Folgende Werte eingeben (exakte Schreibweise beachten!)
 
-         Name:                             renamepls-app
+         Name:                             kleinanzeigen-app
          Class Name:                       ….JDBCRealm
          JAAS Context:                     jdbcRealm
          JNDI:                             jdbc/__default
-         User Table:                       renamepls.renamepls_user
+         User Table:                       kleinanzeigen.kleinanzeigen_user
          User Name Column:                 username
          Password Column:                  password_hash
-         Group Table:                      renamepls.renamepls_user_group
+         Group Table:                      kleinanzeigen.kleinanzeigen_user_group
          Group Table User Name Column:     username
          Group Name Column:                groupname
          Passwort Encryption Algorithm:    SHA-256
-         Assign Groups:                    renamepls-app-user
+         Assign Groups:                    kleinanzeigen-app-user
 
     5. Oben rechts auf "OK" klicken zum Sichern
 

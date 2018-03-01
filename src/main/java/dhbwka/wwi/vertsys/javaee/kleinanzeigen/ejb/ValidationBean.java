@@ -7,7 +7,7 @@
  * Dieser Quellcode ist lizenziert unter einer
  * Creative Commons Namensnennung 4.0 International Lizenz.
  */
-package dhbwka.wwi.vertsys.javaee.renamepls.ejb;
+package dhbwka.wwi.vertsys.javaee.kleinanzeigen.ejb;
 
 import java.util.ArrayList;
 import java.util.List;

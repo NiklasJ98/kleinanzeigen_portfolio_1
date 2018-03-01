@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>dhbwka.wwi.vertsys.javaee</groupId>
-    <artifactId>renamePLS</artifactId>
+    <artifactId>Kleinanzeigen</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>renamePLS</name>
+    <name>Kleinanzeigen</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>

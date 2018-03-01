@@ -9,8 +9,8 @@
  */
 package dhbwka.wwi.vertsys.javaee.renamepls.web;
 
-import dhbwka.wwi.vertsys.javaee.renamepls.ejb.ValidationBean;
-import dhbwka.wwi.vertsys.javaee.renamepls.ejb.UserBean;
+import dhbwka.wwi.vertsys.javaee.kleinanzeigen.ejb.ValidationBean;
+import dhbwka.wwi.vertsys.javaee.kleinanzeigen.ejb.UserBean;
 import dhbwka.wwi.vertsys.javaee.renamepls.jpa.User;
 import java.io.IOException;
 import static java.lang.Integer.parseInt;

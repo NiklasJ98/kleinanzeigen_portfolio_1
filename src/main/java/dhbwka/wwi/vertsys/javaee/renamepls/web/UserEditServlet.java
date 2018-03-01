@@ -9,8 +9,8 @@
  */
 package dhbwka.wwi.vertsys.javaee.renamepls.web;
 
-import dhbwka.wwi.vertsys.javaee.renamepls.ejb.UserBean;
-import dhbwka.wwi.vertsys.javaee.renamepls.ejb.ValidationBean;
+import dhbwka.wwi.vertsys.javaee.kleinanzeigen.ejb.UserBean;
+import dhbwka.wwi.vertsys.javaee.kleinanzeigen.ejb.ValidationBean;
 import dhbwka.wwi.vertsys.javaee.renamepls.jpa.Task;
 import dhbwka.wwi.vertsys.javaee.renamepls.jpa.TaskPriceType;
 import dhbwka.wwi.vertsys.javaee.renamepls.jpa.TaskStatus;

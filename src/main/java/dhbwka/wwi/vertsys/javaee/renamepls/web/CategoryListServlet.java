@@ -10,8 +10,8 @@
 package dhbwka.wwi.vertsys.javaee.renamepls.web;
 
 import dhbwka.wwi.vertsys.javaee.renamepls.ejb.CategoryBean;
-import dhbwka.wwi.vertsys.javaee.renamepls.ejb.TaskBean;
-import dhbwka.wwi.vertsys.javaee.renamepls.ejb.ValidationBean;
+import dhbwka.wwi.vertsys.javaee.kleinanzeigen.ejb.TaskBean;
+import dhbwka.wwi.vertsys.javaee.kleinanzeigen.ejb.ValidationBean;
 import dhbwka.wwi.vertsys.javaee.renamepls.jpa.Category;
 import dhbwka.wwi.vertsys.javaee.renamepls.jpa.Task;
 import java.io.IOException;

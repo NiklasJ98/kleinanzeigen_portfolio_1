@@ -38,7 +38,7 @@ public class Task implements Serializable {
     private long id;
 
     @ManyToOne
-    @NotNull(message = "Die Aufgabe muss einem Benutzer geordnet werden.")
+    @NotNull(message = "Die Anzeige muss einem User zugeordnet werden.")
     private User owner;
 
     @ManyToOne
@@ -54,13 +54,13 @@ public class Task implements Serializable {
     private String longText;
 
     @NotNull(message = "Das Datum darf nicht leer sein.")
-    private Date renamecreateDate;
+    private Date anzeigecreateDate;
 
     @NotNull(message = "Die Uhrzeit darf nicht leer sein.")
-    private Time renamecreateTime;
+    private Time anzeigecreateTime;
     
     @NotNull(message = "hier eigene Nachricht erfinden")
-    private String renameprice;
+    private String anzeigeprice;
 
     @Enumerated(EnumType.STRING)
     @NotNull
@@ -68,7 +68,7 @@ public class Task implements Serializable {
     
     @Enumerated(EnumType.STRING)
     @NotNull
-    private TaskPriceType renamepricetype = TaskPriceType.FIXED;
+    private TaskPriceType anzeigepricetype = TaskPriceType.FIXED;
     
 
     //<editor-fold defaultstate="collapsed" desc="Konstruktoren">
@@ -76,14 +76,14 @@ public class Task implements Serializable {
     }
 
     public Task(User owner, Category category, String shortText, String longText, 
-            Date renamecreateDate, Time renamecreateTime, String renameprice) {
+            Date createDate, Time anzeigecreateTime, String anzeigeprice) {
         
         this.owner = owner;
         this.category = category;
         this.shortText = shortText;
         this.longText = longText;
-        this.renamecreateDate = renamecreateDate;
-        this.renamecreateTime = renamecreateTime;
+        this.anzeigecreateDate = anzeigecreateDate;
+        this.anzeigecreateTime = anzeigecreateTime;
     }
     //</editor-fold>
 
@@ -129,35 +129,35 @@ public class Task implements Serializable {
     }
 
     public Date getRenamecreateDate() {
-        return renamecreateDate;
+        return anzeigecreateDate;
     }
 
-    public void setRenamecreateDate(Date renamecreateDate) {
-        this.renamecreateDate = renamecreateDate;
+    public void setRenamecreateDate(Date anzeigecreateDate) {
+        this.anzeigecreateDate = anzeigecreateDate;
     }
 
     public Time getRenamecreateTime() {
-        return renamecreateTime;
+        return anzeigecreateTime;
     }
 
-    public void setRenamecreateTime(Time renamecreateTime) {
-        this.renamecreateTime = renamecreateTime;
+    public void setRenamecreateTime(Time anzeigecreateTime) {
+        this.anzeigecreateTime = anzeigecreateTime;
     }
 
     public String getRenameprice() {
-        return renameprice;
+        return anzeigeprice;
     }
 
-    public void setRenameprice(String renameprice) {
-        this.renameprice = renameprice;
+    public void setRenameprice(String anzeigeprice) {
+        this.anzeigeprice = anzeigeprice;
     }
 
     public TaskPriceType getRenamepricetype() {
-        return renamepricetype;
+        return anzeigepricetype;
     }
 
-    public void setRenamepricetype(TaskPriceType renamepricetype) {
-        this.renamepricetype = renamepricetype;
+    public void setRenamepricetype(TaskPriceType anzeigepricetype) {
+        this.anzeigepricetype = anzeigepricetype;
     }
 
     public TaskStatus getStatus() {

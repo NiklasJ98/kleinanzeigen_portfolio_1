@@ -12,7 +12,7 @@ package dhbwka.wwi.vertsys.javaee.renamepls.jpa;
 /**
  * Statuswerte einer Aufgabe.
  */
-public enum TaskStatus {
+public enum AnzeigeArt {
     TASK, SEEKER;
 
     /**

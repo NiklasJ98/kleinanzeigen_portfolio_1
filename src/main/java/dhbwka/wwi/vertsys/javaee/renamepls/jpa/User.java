@@ -35,7 +35,7 @@ import javax.validation.constraints.Size;
  * Datenbankklasse für einen Benutzer.
  */
 @Entity
-@Table(name = "RENAMEPLS_USER")
+@Table(name = "kleinanzeigen_USER")
 public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -51,41 +51,41 @@ public class User implements Serializable {
         public String password = "";
     }
     
-    @Column(name = "RENAMELASTNAME", length = 64)
+    @Column(name = "kleinanziegen_user_LASTNAME", length = 64)
     @Size(min = 5, max = 64, message = "Eingabe muss zwischen 5 und 64 liegen!")
     @NotNull(message = "hier einen eigenen Text eingeben ")
-    public String renamelastname;
+    public String user_lastname;
     
-    @Column(name = "RENAMEFIRSTNAME", length = 64)
+    @Column(name = "kleinanzeigen_user_FIRSTNAME", length = 64)
     @Size(min = 5, max = 64, message = "Eingabe muss zwischen 5 und 64 liegen!")
     @NotNull(message = "hier einen eigenen Text eingeben ")
-    public String renamefirstname;
+    public String user_firstname;
     
-    @Column(name = "RENAMEPHONENUMBER", length = 64)
+    @Column(name = "kleinanziegen_user_PHONENUMBER", length = 64)
     @Size(min = 5, max = 64, message = "Eingabe muss zwischen 5 und 64 liegen!")
     @NotNull(message = "hier einen eigenen Text eingeben ")
-    public String renamephonenumber;
+    public String user_phonenumber;
     
-    @Column(name = "RENAMEEMAIL", length = 64)
+    @Column(name = "kleinanziegen_user_EMAIL", length = 64)
     @Size(min = 5, max = 64, message = "Eingabe muss zwischen 5 und 64 liegen!")
     @NotNull(message = "hier einen eigenen Text eingeben ")
     @Pattern(regexp = "^\\w+@\\w+\\..{2,3}(.{2,3})?$")
-    public String renameemail;
+    public String user_email;
     
-    @Column(name = "RENAMEADRESS", length = 64)
+    @Column(name = "kleinanziegen_user_ADRESS", length = 64)
     @Size(min = 5, max = 64, message = "Eingabe muss zwischen 5 und 64 liegen!")
     @NotNull(message = "hier einen eigenen Text eingeben ")
-    public String renameadress;
+    public String user_adress;
     
-    @Column(name = "RENAMEPOSTCODE", length = 64)
+    @Column(name = "kleinanziegen_user_POSTCODE", length = 64)
     @Size(min = 5, max = 64, message = "Eingabe muss zwischen 5 und 64 liegen!")
     @NotNull(message = "hier einen eigenen Text eingeben ")
-    public String renamepsotcode;
+    public String user_postcode;
     
-    @Column(name = "RENAMECITY", length = 64)
+    @Column(name = "kleinanziegen_user_CITY", length = 64)
     @Size(min = 5, max = 64, message = "Eingabe muss zwischen 5 und 64 liegen!")
     @NotNull(message = "hier einen eigenen Text eingeben ")
-    public String renamecity;
+    public String user_city;
         
     @Transient
     private final Password password = new Password();
@@ -96,7 +96,7 @@ public class User implements Serializable {
 
     @ElementCollection
     @CollectionTable(
-            name = "RENAMEPLS_USER_GROUP",
+            name = "kleinanzeigen_user_GROUP",
             joinColumns = @JoinColumn(name = "USERNAME")
     )
     @Column(name = "GROUPNAME")
@@ -110,19 +110,19 @@ public class User implements Serializable {
     }
     
     public User(String username, String password, 
-        String renamefirstname, String renamelastname, String renamephonenumber,
-        String renameemail, String renameadress, String renamepostcode, String renamecity) {
+        String user_firstname, String user_lastname, String user_phonenumber,
+        String user_email, String user_adress, String user_postcode, String user_city) {
         
         this.username = username;
         this.password.password = password;
         this.passwordHash = this.hashPassword(password);
-        this.renamelastname = renamelastname;
-        this.renamefirstname = renamefirstname;
-        this.renameemail = renameemail;
-        this.renamephonenumber = renamephonenumber;
-        this.renamepsotcode = renamepostcode;
-        this.renamecity = renamecity;
-        this.renameadress = renameadress;
+        this.user_lastname = user_lastname;
+        this.user_firstname = user_firstname;
+        this.user_email = user_email;
+        this.user_phonenumber = user_phonenumber;
+        this.user_postcode = user_postcode;
+        this.user_city = user_city;
+        this.user_adress = user_adress;
         
     }
     //</editor-fold>
@@ -137,59 +137,59 @@ public class User implements Serializable {
     }
 
     public String getRenamelastname() {
-        return renamelastname;
+        return user_lastname;
     }
 
-    public void setRenamelastname(String renamelastname) {
-        this.renamelastname = renamelastname;
+    public void setRenamelastname(String user_lastname) {
+        this.user_lastname = user_lastname;
     }
 
     public String getRenamefirstname() {
-        return renamefirstname;
+        return user_firstname;
     }
 
-    public void setRenamefirstname(String renamefirstname) {
-        this.renamefirstname = renamefirstname;
+    public void setRenamefirstname(String user_firstname) {
+        this.user_firstname = user_firstname;
     }
 
     public String getRenamephonenumber() {
-        return renamephonenumber;
+        return user_phonenumber;
     }
 
-    public void setRenamephonenumber(String renamephonenumber) {
-        this.renamephonenumber = renamephonenumber;
+    public void setRenamephonenumber(String user_phonenumber) {
+        this.user_phonenumber = user_phonenumber;
     }
 
     public String getRenameemail() {
-        return renameemail;
+        return user_email;
     }
 
-    public void setRenameemail(String renameemail) {
-        this.renameemail = renameemail;
+    public void setRenameemail(String user_email) {
+        this.user_email = user_email;
     }
 
     public String getRenameadress() {
-        return renameadress;
+        return user_adress;
     }
 
-    public void setRenameadress(String renameadress) {
-        this.renameadress = renameadress;
+    public void setRenameadress(String user_adress) {
+        this.user_adress = user_adress;
     }
 
     public String getRenamepsotcode() {
-        return renamepsotcode;
+        return user_postcode;
     }
 
-    public void setRenamepsotcode(String renamepsotcode) {
-        this.renamepsotcode = renamepsotcode;
+    public void setRenamepsotcode(String user_psotcode) {
+        this.user_postcode = user_psotcode;
     }
 
     public String getRenamecity() {
-        return renamecity;
+        return user_city;
     }
 
-    public void setRenamecity(String renamecity) {
-        this.renamecity = renamecity;
+    public void setRenamecity(String user_city) {
+        this.user_city = user_city;
     }
 
     public List<Task> getTasks() {
